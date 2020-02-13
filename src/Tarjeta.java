@@ -59,4 +59,15 @@ public class Tarjeta {
 		}
 		return bExito;
 	}
+	
+	public boolean retirarCajero(float importe, int Pin) {
+		boolean bExito = false;
+		if(Pin == getPin()) {
+		if (this.getSaldo() > importe) {
+			this.setSaldo(getSaldo() - importe);
+			bExito = true;
+		}
+		}
+		return bExito;
+	}
 }
