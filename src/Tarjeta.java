@@ -15,6 +15,7 @@ public class Tarjeta {
      
     }
     
+    //R y S
     public String getId() {
 		return id;
 	}
@@ -47,4 +48,15 @@ public class Tarjeta {
 		this.saldo = saldo;
 	}
 
+	public boolean comprar(float importe, String sDni) {
+		boolean bExito = false;
+
+		if (sDni.equals(this.getDniTitular())) {
+			if (this.getSaldo() > importe) {
+				this.setSaldo(getSaldo() - importe);
+				bExito = true;
+			}
+		}
+		return bExito;
+	}
 }
