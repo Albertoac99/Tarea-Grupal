@@ -70,4 +70,15 @@ public class Tarjeta {
 		}
 		return bExito;
 	}
+	
+	public String toString() {
+		String sResultado = "";
+		
+		sResultado += "Id: "+getId()+"\n";
+		sResultado += "DNI: "+getDniTitular()+"\n";
+		sResultado += "Pin: "+getPin()+"\n";
+		sResultado += "Saldo: "+getSaldo()+"\n";
+		
+		return sResultado;
+	}
 }
