@@ -67,7 +67,12 @@ public class Tarjeta {
 	}
 	
 
-	
+	/*
+	 * Función del metodo retirar dinero
+	 * Comprueba si la tarjeta introducida tiene saldo suficiente
+	 * para realizar la operación y si lo tiene se lo resta. 
+	 * Se utiliza si se desea retirar dinero de un cajero.
+	 */
 	public boolean retirarCajero(float importe, int Pin) {
 		boolean bExito = false;
 		if(Pin == getPin()) {
