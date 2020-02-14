@@ -45,6 +45,13 @@ public class Tarjeta {
 	public void setSaldo(float saldo) {
 		this.saldo = saldo;
 	}
+	
+	/*
+	 * Función del metodo comprar.
+	 * Comprueba si la tarjeta introducida tiene saldo suficiente
+	 * para realizar la operación y si lo tiene se lo resta.
+	 * Se utiliza si se desea compar algo.
+	 */
 
 	public boolean comprar(float importe, String sDni) {
 		boolean bExito = false;
@@ -58,6 +65,8 @@ public class Tarjeta {
 		return bExito;
 	}
 	
+
+	
 	public boolean retirarCajero(float importe, int Pin) {
 		boolean bExito = false;
 		if(Pin == getPin()) {
@@ -68,6 +77,8 @@ public class Tarjeta {
 		}
 		return bExito;
 	}
+	
+
 	
 	public String toString() {
 		String sResultado = "";
