@@ -84,7 +84,11 @@ public class Tarjeta {
 		return bExito;
 	}
 	
+	
 
+	/*
+	 * Función que imprime por pantalla los atributos de la clase
+	 */
 	
 	public String toString() {
 		String sResultado = "";
