@@ -7,4 +7,8 @@ public interface TarjetaMonedero {
 	
 	public String getDniTitular();
 	
+	public float getSaldo();
+	
+	public void setPin(int Pin);
+	
 }
