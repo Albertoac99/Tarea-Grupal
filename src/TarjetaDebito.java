@@ -7,5 +7,7 @@ public interface TarjetaDebito {
 	
 	public String getDniTitular();
 
-	//prueba
+	public float getSaldo();
+	
+	public void setPin(int Pin);
 }
