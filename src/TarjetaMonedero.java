@@ -1,8 +1,10 @@
 
 public interface TarjetaMonedero {
-<<<<<<< HEAD
 
-=======
-//la tarjeta
->>>>>>> branch 'master' of https://github.com/Albertoac99/Tarea-Grupal.git
+	public boolean comprar(float importe, String sDni);
+	
+	public String getId();
+	
+	public String getDniTitular();
+	
 }
