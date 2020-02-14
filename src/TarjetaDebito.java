@@ -6,4 +6,6 @@ public interface TarjetaDebito {
 	public String getId();
 	
 	public String getDniTitular();
+
+	//prueba
 }
