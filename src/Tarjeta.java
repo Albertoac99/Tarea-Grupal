@@ -46,6 +46,7 @@ public class Tarjeta {
 		this.saldo = saldo;
 	}
 	
+	//prueba
 	/*
 	 * Función del metodo comprar.
 	 * Comprueba si la tarjeta introducida tiene saldo suficiente
